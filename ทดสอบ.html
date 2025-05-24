@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>นพณัช No.1</title>
+  <link rel="icon" type="image/jpeg" href="111.jpg" sizes="32x32" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideIn 1s ease forwards;
+    }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+      animation: zoomIn 1.2s ease-in-out forwards;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #333;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      font-size: 18px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+      width: 80%;
+      max-width: 300px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+
+    .button:nth-of-type(1) { animation-delay: 0.3s; }
+    .button:nth-of-type(2) { animation-delay: 0.5s; }
+    .button:nth-of-type(3) { animation-delay: 0.7s; }
+
+    .button1 {
+      background-color: #db057b;
+    }
+
+    .button1:hover {
+      background-color: #b00466;
+    }
+
+    .button-line {
+      background-color: #00c300;
+    }
+
+    .button-line:hover {
+      background-color: #009900;
+    }
+
+    .button-facebook {
+      background-color: #007bff;
+    }
+
+    .button-facebook:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 20px;
+      }
+
+      .button {
+        font-size: 16px;
+        padding: 10px;
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="p.jpg" alt="นพณัชเอง" />
+
+    <h2>ช่องทางติดต่อ:</h2>
+
+    <a class="button button1" href="https://www.instagram.com/pop_notsee/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram @pop_notsee
+    </a><br>
+
+    <a class="button button-facebook" href="https://www.facebook.com/pnt.popnottop" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook @Pn Pop
+    </a><br>
+
+    <a class="button button-line" href="https://line.me/ti/p/20n-lDAfti" target="_blank">
+      <i class="fab fa-line"></i> Line @pop_not.see
+    </a>
+  </div>
+</body>
+<body><audio id="greeting" autoplay>
+    <source src="สวัดดีครับ.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  
+  <script>
+    window.addEventListener('load', function () {
+      const audio = document.getElementById('greeting');
+      audio.play().catch(e => {
+        console.log('ไม่สามารถเล่นเสียงอัตโนมัติได้: ', e);
+      });
+    });
+  </script>
+  </body>
+</html>
